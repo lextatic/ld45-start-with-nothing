@@ -15,8 +15,10 @@ MonoBehaviour:
   CommandAliases:
   - mountains
   - mountain
+  - peak
+  - summit
   CommandHints:
-  - That horizon is boring.
+  - That horizon is boring right now.
   - Has roots as nobody sees.
   - Is taller than trees.
   - Up, up it goes.

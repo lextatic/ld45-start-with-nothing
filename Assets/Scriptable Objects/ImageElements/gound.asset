@@ -17,11 +17,21 @@ MonoBehaviour:
   - soil
   - floor
   - grass
+  - land
   CommandHints:
   - Look down, what do you see?
-  - I think you need a base.
+  - I think you need a base to start with.
   - Something you stand on.
-  CommandMessage: Now we can run around.
+  CommandMessage: Now we can start building things, right?
   CommandUnlocks:
   - {fileID: 11400000, guid: a12f898d87b685549aafc70758fc902d, type: 2}
+  - {fileID: 11400000, guid: 0bc2525d5adfff149ac8076bca801c59, type: 2}
+  - {fileID: 11400000, guid: e53507047ba651d49af2b3ad1c10615b, type: 2}
+  - {fileID: 11400000, guid: 822c2e2e75f5f264e9956f0a01dea306, type: 2}
+  - {fileID: 11400000, guid: 3a6f7297f76d47240829619c277e69ff, type: 2}
+  - {fileID: 11400000, guid: 8afa32c41675f254f800cf00b9a14d2e, type: 2}
+  - {fileID: 11400000, guid: 91198fa30304129498e8a6db30a8fe9d, type: 2}
+  - {fileID: 11400000, guid: cd94a61e5e974f34fb8178f21bb9e7c2, type: 2}
+  - {fileID: 11400000, guid: 03554cad0432f93488fa7e606cf0e6c7, type: 2}
+  - {fileID: 11400000, guid: 91a70edd2e72be94f819bef7b7fae964, type: 2}
   ObjectName: ground

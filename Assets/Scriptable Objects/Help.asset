@@ -16,7 +16,7 @@ MonoBehaviour:
   - help
   - '?'
   CommandHints:
-  - Huh?
-  - Nop.
-  CommandMessage: 'Progress: (0/6)'
+  - It's always nouns.
+  - If you're stuck try some synonyms.
+  CommandMessage: Type in things to build a nice picture.
   CommandUnlocks: []

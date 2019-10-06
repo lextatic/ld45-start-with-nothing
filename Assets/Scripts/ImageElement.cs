@@ -15,4 +15,9 @@ public class ImageElement : MonoBehaviour
 		RawImage.enabled = false;
 		Elements.Add(gameObject.name, this);
 	}
+
+	private void OnDestroy()
+	{
+		Elements.Clear();
+	}
 }

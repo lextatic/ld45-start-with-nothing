@@ -19,7 +19,6 @@ MonoBehaviour:
   CommandHints:
   - It's too dark, don't you think?
   - It's pitch black...
-  - I'm feeling cold.
   CommandMessage: Let there be light.
   CommandUnlocks: []
   ObjectName: sun

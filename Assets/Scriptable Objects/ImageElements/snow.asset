@@ -17,6 +17,8 @@ MonoBehaviour:
   CommandHints:
   - Those mountains are boring.
   - Those mountains are missing something,,,
-  CommandMessage: Oh! That's what was missing there!
+  - Found in high peaks or in cold winters.
+  - It falls slowly from the sky.
+  CommandMessage: Don't judge my art...
   CommandUnlocks: []
   ObjectName: snow

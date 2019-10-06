@@ -3,20 +3,13 @@
 [CreateAssetMenu(fileName = "New Info Command", menuName = "Commands/New Info Command")]
 public class InfoCommand : Command
 {
-	public override void Execute()
+	public override void Execute() { }
+
+	public override string FormattedCommandMessage
 	{
-		int countTotal = 0;
-		int countDone = 0;
-
-		foreach(ImageElement ie in ImageElement.Elements.Values)
+		get
 		{
-			countTotal++;
-			if(ie.RawImage.enabled)
-			{
-				countDone++;
-			}
+			return $"<color=\"yellow\">{CommandMessage}</color>";
 		}
-
-		CommandMessage = $"Progress: ({countDone}/{countTotal})";
 	}
 }

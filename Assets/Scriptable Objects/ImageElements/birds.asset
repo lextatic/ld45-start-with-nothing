@@ -18,7 +18,7 @@ MonoBehaviour:
   CommandHints:
   - Try putting some life in the sky.
   - They have feathers.
-  - They lay eggs.
-  CommandMessage: Birds!
+  - They sing in the morning.
+  CommandMessage: Our feathered friends.
   CommandUnlocks: []
   ObjectName: birds

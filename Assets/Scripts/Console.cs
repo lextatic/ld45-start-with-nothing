@@ -37,18 +37,18 @@ public class Console : MonoBehaviour
 
 			if (CheckGameOver())
 			{
-				TextField.SetText($">\nWell done! You finished the game.\n>{InputField.text}");
+				TextField.SetText($">\n<color=\"green\">Well done! You finished the game.</color>\n>{InputField.text}");
 				// Could disable commands here.
 			}
 			else
 			{
-				TextField.SetText($">\n{cmd.CommandMessage}\n>{InputField.text}");
+				TextField.SetText($">\n{cmd.FormattedCommandMessage}\n>{InputField.text}");
 			}
 		}
 
 		else
 		{
-			TextField.SetText($">\n{FindHelper()}\n>{InputField.text}");
+			TextField.SetText($">\n<color=#AAAAAA>{FindHelper()}</color>\n>{InputField.text}");
 		}
 
 		ClearInputField();

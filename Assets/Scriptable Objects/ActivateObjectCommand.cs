@@ -12,4 +12,24 @@ public class ActivateObjectCommand : Command
 			imageElement.RawImage.enabled = true;
 		}
 	}
+
+	public override string FormattedCommandMessage
+	{
+		get
+		{
+			int countTotal = 0;
+			int countDone = 0;
+
+			foreach (ImageElement ie in ImageElement.Elements.Values)
+			{
+				countTotal++;
+				if (ie.RawImage.enabled)
+				{
+					countDone++;
+				}
+			}
+
+			return $"<color=\"green\">{CommandMessage}</color> (<color=\"yellow\">{countDone}</color>/<color=\"yellow\">{countTotal}</color>)";
+		}
+	}
 }

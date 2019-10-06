@@ -17,8 +17,10 @@ MonoBehaviour:
   - clouds
   - sky
   CommandHints:
-  - I don't think it's going to rain today,
+  - I don't think it's going to rain today.
   - Tell me, is the sky clear outside today?
-  CommandMessage: They look nothing like cotton...
+  - They're part of the water cycle.
+  - It's basically water.
+  CommandMessage: Those shapes are boring. Sorry.
   CommandUnlocks: []
   ObjectName: clouds
