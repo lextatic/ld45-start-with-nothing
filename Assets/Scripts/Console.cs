@@ -11,9 +11,12 @@ public class Console : MonoBehaviour
 
 	public List<Command> EnabledCommands;
 
+	private List<Command> UsedCommands;
+
 	private void Start()
 	{
 		ClearInputField();
+		UsedCommands = new List<Command>();
 	}
 
 	public void SubmitCommand()
@@ -26,13 +29,21 @@ public class Console : MonoBehaviour
 
 			foreach(Command unlockedCommand in cmd.CommandUnlocks)
 			{
-				if(!EnabledCommands.Contains(unlockedCommand))
+				if(!EnabledCommands.Contains(unlockedCommand) && !UsedCommands.Contains(unlockedCommand))
 				{
 					EnabledCommands.Add(unlockedCommand);
 				}
 			}
 
-			TextField.SetText($">\n{cmd.CommandMessage}\n>{InputField.text}");
+			if (CheckGameOver())
+			{
+				TextField.SetText($">\nWell done! You finished the game.\n>{InputField.text}");
+				// Could disable commands here.
+			}
+			else
+			{
+				TextField.SetText($">\n{cmd.CommandMessage}\n>{InputField.text}");
+			}
 		}
 
 		else
@@ -77,6 +88,7 @@ public class Console : MonoBehaviour
 		if(foundCommand)
 		{
 			EnabledCommands.Remove(command);
+			UsedCommands.Add(command);
 		}
 		
 		return foundCommand;
@@ -104,5 +116,18 @@ public class Console : MonoBehaviour
 		InputField.ActivateInputField();
 		InputField.Select();
 		InputField.text = "";
+	}
+
+	private bool CheckGameOver()
+	{
+		foreach (ImageElement ie in ImageElement.Elements.Values)
+		{
+			if (!ie.RawImage.enabled)
+			{
+				return false;
+			}
+		}
+
+		return true;
 	}
 }
