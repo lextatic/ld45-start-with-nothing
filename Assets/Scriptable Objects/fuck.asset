@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0c4a433f314b6749b230bdb3e16f9b1, type: 3}
-  m_Name: help
+  m_Name: fuck
   m_EditorClassIdentifier: 
   CommandAliases:
-  - help
-  - '?'
-  CommandHints:
-  - Huh?
-  - Nop.
-  CommandMessage: 'Progress: (0/6)'
+  - fuck
+  CommandHints: []
+  CommandMessage: Whatch your mouth.
   CommandUnlocks: []

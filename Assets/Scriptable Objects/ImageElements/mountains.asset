@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3c37a0d8bfa10e468b6098ca49ef698, type: 3}
-  m_Name: blue
+  m_Name: mountains
   m_EditorClassIdentifier: 
   CommandAliases:
-  - blue
+  - mountains
+  - mountain
   CommandHints:
-  - The sky is...
-  CommandMessage: I'm blue, abudi abuda.
-  CommandUnlocks: []
-  ObjectName: blue
+  - That horizon is boring.
+  - Has roots as nobody sees.
+  - Is taller than trees.
+  - Up, up it goes.
+  - And yet never grows?
+  CommandMessage: Mountains! Yes!
+  CommandUnlocks:
+  - {fileID: 11400000, guid: 423b9c5ed81ed9e439de599702642d76, type: 2}
+  ObjectName: mountains

@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3c37a0d8bfa10e468b6098ca49ef698, type: 3}
-  m_Name: red
+  m_Name: sun
   m_EditorClassIdentifier: 
   CommandAliases:
-  - red
-  - crimson
+  - sun
+  - star
+  - light
   CommandHints:
-  - Blood is...
-  CommandMessage: The crimson color.
-  CommandUnlocks:
-  - {fileID: 11400000, guid: 0f1962b652bc0a54085b28ea46559b98, type: 2}
-  ObjectName: red
+  - It's too dark, don't you think?
+  - It's pitch black...
+  - I'm feeling cold.
+  CommandMessage: Let there be light.
+  CommandUnlocks: []
+  ObjectName: sun

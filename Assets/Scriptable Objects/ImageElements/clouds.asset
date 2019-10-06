@@ -9,14 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c4a433f314b6749b230bdb3e16f9b1, type: 3}
-  m_Name: help
+  m_Script: {fileID: 11500000, guid: e3c37a0d8bfa10e468b6098ca49ef698, type: 3}
+  m_Name: clouds
   m_EditorClassIdentifier: 
   CommandAliases:
-  - help
-  - '?'
+  - cloud
+  - clouds
+  - sky
   CommandHints:
-  - Huh?
-  - Nop.
-  CommandMessage: 'Progress: (0/6)'
+  - I don't think it's going to rain today,
+  - Tell me, is the sky clear outside today?
+  CommandMessage: They look nothing like cotton...
   CommandUnlocks: []
+  ObjectName: clouds
